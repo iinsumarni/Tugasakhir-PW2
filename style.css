@@ -262,3 +262,42 @@ footer p {
     font-size: 0.9rem;
     color: #ccc;
 }
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .landing .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .photo img {
+        width: 200px;
+        height: 200px;
+    }
+}
