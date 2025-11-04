@@ -230,3 +230,35 @@ header {
     font-size: 0.95rem;
     color: #333;
 }
+footer {
+    background: #2c0a53;
+    color: #eee;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+footer h2 {
+    margin-bottom: 1.5rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-links a {
+    color: #eee;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #c68cff;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
