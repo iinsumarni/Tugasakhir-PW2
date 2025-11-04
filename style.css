@@ -13,3 +13,60 @@ body {
     background: linear-gradient(120deg, #f4e1ff, #f0f0ff, #e8d4ff);
     background-attachment: fixed;
 }
+header {
+    position: fixed;
+    width: 100%;
+    top: 25px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.9rem 3.7rem;
+    width: 100%;
+    max-width: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+}
+
+.navbar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #6a0dad;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.nav-links a:hover {
+    color: #8e2de2;
+    transform: scale(1.1);
+}
